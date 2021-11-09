@@ -5,12 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Montserrat&family=Nunito:wght@300&family=Poppins:wght@100;200;400;600&display=swap');
+        body {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: bold;
+            background: white;
+            color: black;
+        }
+        
+        .cat {
+            max-width: 10%;
+            max-height: 10%;
+            margin-left: 3%;
+        }
+        
+        header {
+            font-size: 50px;
+            margin-left: 130px;
+            font-weight: bold;
+            font-style: 'Poppins';
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container mx-auto">
+        <nav class="flex justify-between py-4 border-b">
+            <div class="cat">
+                <img src="/assets/images/logo.png" alt="Lemonwares">
+            </div>
 
+            <div class="flex gap-8 items-center">
+                <a class="text-color black" href="index.html">Our Services</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog and News</a>
+                <a href="contact.html">Contact</a>
+                <a href="account.html">account</a>
+            </div>
+
+            <div class="flex gap-8 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="red">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <p>
+                    +2349067322844
+                </p>
+            </div>
+        </nav>
+    </div>
+
+    <div class="flex gap-8 items-left">
+        <header>
+            Premium Web Hosting for Your Website
+        </header>
+    </div>
 </body>
 
 </html>
